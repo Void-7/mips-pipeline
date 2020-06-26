@@ -8,6 +8,7 @@ module MEM_WR(
     input [4:0] MEM_Rw,
     input MEM_RegWrite,
     input MEM_MemtoReg,
+    input MEM_jal,MEM_jalr,
 
     output reg[31:0] WR_pc,
     output reg[31:0] WR_pc_plus4,
@@ -15,7 +16,9 @@ module MEM_WR(
     output reg[31:0] WR_ALUresult,
     output reg[4:0] WR_Rw,
     output reg WR_RegWrite,
-    output reg WR_MemtoReg
+    output reg WR_MemtoReg,
+    output reg WR_jal,
+    output reg WR_jalr
 );
 reg[31:0] WR_inst;
 
@@ -37,6 +40,8 @@ always@(posedge clk)begin
     WR_Rw<=MEM_Rw;
     WR_RegWrite<=MEM_RegWrite;
     WR_MemtoReg<=MEM_MemtoReg;
+    WR_jal<=MEM_jal;
+    WR_jalr<=MEM_jalr;
     
     WR_inst<=MEM_inst;
 end

@@ -33,8 +33,7 @@ module ID_EX(
     output reg EX_Memwrite,
     output reg EX_Branch,EX_nBranch,EX_BGEZ,EX_BGTZ,EX_BLEZ,EX_BLTZ,
     output reg EX_lb,EX_lbu,EX_sb,
-    output reg EX_jal,EX_jmp,EX_jr,EX_jalr,
-    output reg EX_ExtOp
+    output reg EX_jal,EX_jmp,EX_jr,EX_jalr
 
 );
 

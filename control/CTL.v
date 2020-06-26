@@ -77,14 +77,14 @@ assign BLTZ=(!op[31]&&!op[30]&&!op[29]&&!op[28]&&!op[27]&&op[26]
 assign BGTZ=!op[31]&&!op[30]&&!op[29]&&op[28]&&op[27]&&op[26];
 assign BLEZ=!op[31]&&!op[30]&&!op[29]&&op[28]&&op[27]&&!op[26];
 
-always@(*)begin
-    case(op)    //Br-Type
-        6'b000001:case(br_div)
-            5'b00001: ALUop<=5'b10001;  //bgez
-            5'b00000: ALUop<=5'b10100; endcase  //bltz
-        6'b000111: ALUop<=5'b10010;  //bgtz
-        6'b000110: ALUop<=5'b10011;  //blez
-    endcase
-end
+// always@(*)begin
+//     case(op)    //Br-Type
+//         6'b000001:case(br_div)
+//             5'b00001: ALUop<=5'b10001;  //bgez
+//             5'b00000: ALUop<=5'b10100; endcase  //bltz
+//         6'b000111: ALUop<=5'b10010;  //bgtz
+//         6'b000110: ALUop<=5'b10011;  //blez
+//     endcase
+// end
 
 endmodule

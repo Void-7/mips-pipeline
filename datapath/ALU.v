@@ -21,10 +21,10 @@ parameter Sltu= 5'b01001;
 parameter Srl=5'b01000;
 parameter Subu=5'b00001;
 parameter Lui=5'b10000;
-parameter Bgez=5'b10001;
-parameter Bgtz=5'b10010;
-parameter Blez=5'b10011;
-parameter Bltz=5'b10100;
+// parameter Bgez=5'b10001;
+// parameter Bgtz=5'b10010;
+// parameter Blez=5'b10011;
+// parameter Bltz=5'b10100;
 parameter Sra=5'b01101;
 parameter Srav=5'b01110;
 parameter Srlv=5'b01111;
@@ -51,10 +51,10 @@ always@(*) begin
         Sllv:begin result=b<<a;end
         Subu:begin result=a-b;end
         Lui:begin result = {b[15:0], 16'b0};end
-        Bgez:begin result=signed_a>=0?1:0;end
-        Bgtz:begin result=signed_a>0?1:0;end
-        Blez:begin result=signed_a<=0?1:0;end
-        Bltz:begin result=signed_a<0?1:0;end
+        // Bgez:begin result=signed_a>=0?1:0;end
+        // Bgtz:begin result=signed_a>0?1:0;end
+        // Blez:begin result=signed_a<=0?1:0;end
+        // Bltz:begin result=signed_a<0?1:0;end
         Jr,Jalr:begin result=a+32'h00003000;end
         default: result=a+b;
     endcase

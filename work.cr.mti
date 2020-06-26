@@ -5,6 +5,17 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	ID_EX
 
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/MUX.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/MUX.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module MUX
+-- Compiling module MUX_3src_5bit
+-- Compiling module MUX3
+
+Top level modules:
+	MUX
+	MUX_3src_5bit
+	MUX3
+
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/ALU.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/ALU.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module ALU
@@ -12,14 +23,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	ALU
 
-} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/MUX.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/MUX.v
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/IF.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/IF.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module MUX
--- Compiling module MUX_3src_5bit
+-- Compiling module IF
 
 Top level modules:
-	MUX
-	MUX_3src_5bit
+	IF
 
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/mips.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/mips.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -27,13 +36,6 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	mips
-
-} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/IF.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/IF.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module IF
-
-Top level modules:
-	IF
 
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/MEM.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/MEM.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -49,6 +51,15 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	PC
 
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/hazard/HazardDetectionUnit.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/hazard/HazardDetectionUnit.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module HazardDetectionUnit
+-- Compiling module IDEX_SigMux
+
+Top level modules:
+	HazardDetectionUnit
+	IDEX_SigMux
+
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/IF_ID.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/IF_ID.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module IF_ID
@@ -56,12 +67,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	IF_ID
 
-} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/MEM_WR.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/MEM_WR.v
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/hazard/ForwardingUnit.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/hazard/ForwardingUnit.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module MEM_WR
+-- Compiling module ForwardingUnit
 
 Top level modules:
-	MEM_WR
+	ForwardingUnit
 
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/tb.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/tb.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -70,6 +81,13 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	testbench
 
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/MEM_WR.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/MEM_WR.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module MEM_WR
+
+Top level modules:
+	MEM_WR
+
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/RF.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/RF.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module regfile
@@ -77,12 +95,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	regfile
 
-} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/WR.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/WR.v
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/EX_MEM.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/EX_MEM.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module WR
+-- Compiling module EX_MEM
 
 Top level modules:
-	WR
+	EX_MEM
 
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/control/CTL.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/control/CTL.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -90,6 +108,13 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	control
+
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/WR.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/WR.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module WR
+
+Top level modules:
+	WR
 
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/im.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/im.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -105,19 +130,19 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	ALUctl
 
-} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/EX.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/EX.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module EX
-
-Top level modules:
-	EX
-
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/npc.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/npc.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module npc
 
 Top level modules:
 	npc
+
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/ID.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/ID.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ID
+
+Top level modules:
+	ID
 
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/dm.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/dm.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -136,11 +161,11 @@ Top level modules:
 	s_ext
 	z_ext
 
-} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/ID.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/ID.v
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/EX.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/EX.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module ID
+-- Compiling module EX
 
 Top level modules:
-	ID
+	EX
 
 } {} {}}

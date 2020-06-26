@@ -4,8 +4,9 @@ module im_4k(
 );
 reg [31:0]  im [1023:0];
 
+integer i;
 initial begin
-    $readmemh("p0.txt", im);
+    $readmemh("code.txt", im);
 end
 
 assign dout = im[addr];

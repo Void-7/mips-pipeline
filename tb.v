@@ -11,7 +11,7 @@ initial begin
 end
 
 always begin
-    #45 rst <= 0;
+    #35 rst <= 0;
 end
 
 always #40 clk=~clk;

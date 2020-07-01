@@ -30,7 +30,7 @@ assign C2a=(MEMWR_RegWr)&&(MEMWR_Rd!=5'b0)&&(EXMEM_Rd!=IDEX_Rs)
 assign C2b=(MEMWR_RegWr)&&(MEMWR_Rd!=5'b0)&&(EXMEM_Rd!=IDEX_Rt)
 &&(MEMWR_Rd==IDEX_Rt)
 ||(MEMWR_RegWr)&&(MEMWR_Rd!=5'b0)&&(EXMEM_MemWr)&&(MEMWR_Rd==IDEX_Rt);
-assign C3a=(IDEX_RegWr)&&(IDEX_Rd!=5'b0)&&(IDEX_Rd==IFID_Rs);
+assign C3a=(IDEX_RegWr)&&(IDEX_Rd!=5'b0||IDEX_Rt!=0)&&((IDEX_Rd==IFID_Rs)||(IDEX_Rt==IFID_Rs));
 assign C4=(EXMEM_MemWr)&&(MEMWR_Rd!=5'b0)&&(EXMEM_Rt==MEMWR_Rd);//sw pre-post data hazard
 assign C5a=(EXMEM_RegWr)&&(EXMEM_Rd!=5'b0)&&(IFID_Rs==EXMEM_Rd);
 assign C5b=(EXMEM_RegWr)&&(EXMEM_Rd!=5'b0)&&(IFID_Rt==EXMEM_Rd);

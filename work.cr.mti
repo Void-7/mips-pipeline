@@ -51,6 +51,13 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	PC
 
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/IF_ID.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/IF_ID.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module IF_ID
+
+Top level modules:
+	IF_ID
+
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/hazard/HazardDetectionUnit.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/hazard/HazardDetectionUnit.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module HazardDetectionUnit
@@ -60,19 +67,19 @@ Top level modules:
 	HazardDetectionUnit
 	IDEX_SigMux
 
-} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/IF_ID.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/IF_ID.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module IF_ID
-
-Top level modules:
-	IF_ID
-
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/hazard/ForwardingUnit.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/hazard/ForwardingUnit.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module ForwardingUnit
 
 Top level modules:
 	ForwardingUnit
+
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/RF.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/RF.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module regfile
+
+Top level modules:
+	regfile
 
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/tb.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/tb.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -87,13 +94,6 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	MEM_WR
-
-} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/RF.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/RF.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module regfile
-
-Top level modules:
-	regfile
 
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/EX_MEM.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/midreg/EX_MEM.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -130,20 +130,6 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	ALUctl
 
-} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/npc.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/npc.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module npc
-
-Top level modules:
-	npc
-
-} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/ID.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/ID.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module ID
-
-Top level modules:
-	ID
-
 } {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/dm.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/dm.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module dm_4k
@@ -167,5 +153,19 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	EX
+
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/ID.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/segment/ID.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ID
+
+Top level modules:
+	ID
+
+} {} {}} D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/npc.v {1 {vlog -work work -vopt -stats=none D:/WorkFile/Pipeline/pipeline-mips-cpu/datapath/npc.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module npc
+
+Top level modules:
+	npc
 
 } {} {}}

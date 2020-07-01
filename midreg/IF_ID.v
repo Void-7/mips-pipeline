@@ -1,6 +1,5 @@
 module IF_ID(
     input clk,
-    //input rst,
     input [31:0] pc,
     input [31:0] pc_plus4,
     input [31:0] inst,

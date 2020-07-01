@@ -49,7 +49,7 @@ always@(*) begin
 end
 
 //jmp-type inst.
-assign jmp_pc_addr=(jmp==1)?{cur_pc[31:28],instruction[25:0],2'b00}:32'b0;
+assign jmp_pc_addr=(jmp==1)?({cur_pc[31:28],instruction[25:0],2'b00}+32'h00003000):32'b0;
 MUX bj_mux(br_out,jmp_pc_addr,jmp,bj_mux_result);
 always@(*) begin
     if(jr==1||jalr==1) jr_pc_addr<=jf_data+32'h00003000;

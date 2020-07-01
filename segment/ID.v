@@ -97,9 +97,6 @@ ID_Branch,ID_nBranch,ID_BGEZ,ID_BGTZ,ID_BLEZ,ID_BLTZ,real_bf_rdata1,pc_stall_en,
 ID_npc,ID_Flush);
 assign sign_ext_offset=(ID_Branch==1)?extend:32'b0;
 
-//Forwarding slect for J-type inst
-//assign jf_data=(ForwardC)?C3:bf_rdata1;
-
 //Forwarding slect for Br-type inst:RAW
 assign bf_rdata1=(ForwardE==2'b10)?C1:ID_busA;
 assign bf_rdata2=(ForwardE==2'b01)?C1:ID_busB;
@@ -107,8 +104,6 @@ assign real_bf_rdata1=(ForwardC)?C3:bf_rdata1;
 
 assign read_Rs=(ForwardF==2'b10)?C6:real_bf_rdata1;
 assign read_Rt=(ForwardF==2'b01)?C6:bf_rdata2;
-
-//assign real_bf_rdata2=(ForwardC)?C3:bf_rdata2;
 
 //for load-use stall ID/EX midreg
 IDEX_SigMux IDEX_SigMux(
